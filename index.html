@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pet Shelter</title>
+
+<body>
+    <div class="navbar">
+        <div class="top-nav">
+            <div class="top-left">
+                <img src="./assets/heart-light.png" alt="heart-light">
+                <h1>Pet Shelter</h1>
+            </div>
+            <div class="top-right">
+                <a style="text-decoration:none" href="#">Find a Pet</a>
+                <a style="text-decoration:none" href="#">About</a>
+                <button onclick="hide(this)"> Donate</button>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-content">
+                <h3>I'm looking for a...</h3>
+                <div class="bt-left">
+                    <img class="paw" src="./assets/paw-light.png" alt="paw-light">
+                    <select onclick="check()">
+                        <option>Any Pet</option>
+                        <option onclick="alert('You are looking for a Cat')" value="cat">Cat</option>
+                        <option onclick="alert('You are looking for a Dog')" value="dog">Dog</option>
+                    </select>
+                    </div>
+            </div>
+                <div class="nav-content">
+                    <h3>in or near...</h3>
+                        <div class="bt-mid">
+                            <img class="paw" src="./assets/pin-light.png" alt="pin-light">
+                            <input type="text" placeholder="City or Zip Code">
+                        </div>
+                </div>
+                        <div class="nav-content">
+                            <div class="bt-right">
+                            <button class="find-friend">Find my new best friend</button>
+                            </div>
+                        </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img src="./assets/pepper.jpg" alt="Pepper">
+            <div class="pepper">
+                <h1>Pepper</h1>
+                <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+            </div>
+            <div class="likes">
+                <div class="pettings">
+                    <h2 id="top">3 </h2>
+                    <h3>petting(s)</h3>
+                </div>
+                <button class="like-button" onclick="addLikesTop()">Pet Pepper</button>
+            </div>
+        </div>
+        <div class="content">
+            <img src="./assets/bruce.jpg" alt="Bruce">
+            <div class="bruce">
+                <h1>Bruce</h1>
+                <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+            </div>
+            <div class="likes">
+                <div class="pettings">
+                    <h2 id="middle">5 </h2>
+                    <h3>petting(s)</h3>
+                </div>
+                <button class="like-button" onclick="addLikesMiddle()">Pet Bruce</button>
+            </div>
+        </div>
+        <div class="content">
+            <img src="./assets/oscar.jpg" alt="Oscar">
+            <div class="oscar">
+                <h1>Oscar</h1>
+                <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+            </div>
+            <div class="likes">
+                <div class="pettings">
+                    <h2 id="bottom">8 </h2>
+                    <h3>petting(s)</h3>
+                </div>
+                <button class="like-button" onclick="addLikesBottom()">Pet Oscar</button>
+            </div>
+        </div>
+    </div>
+    <form>
+        <input type="text" required>
+        <input type="submit"> 
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* nav */
+
+.navbar {
+    background-color: #119b9d;
+    height: 250px;
+    border-bottom: solid 5px;
+}
+
+/* Top Nav */
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.top-right{
+    display: flex;
+    gap: 30px;
+}
+
+.top-right a{
+    color: black;
+    font-size: 22px; 
+}
+
+.top-right button {
+    border-style: solid;
+    border-color: #9900ff;
+    font-size: 22px;
+    width: 100px;
+    height: 30px;
+    color: #9900ff;
+    font-weight: bold;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 1);
+}
+
+/* Bottom Nav */
+
+.bottom-nav {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.nav-content h3 {
+    color: white;
+}
+
+.nav-content img {
+    height: 30px;
+}
+
+.nav-content select {
+    height: 30px;
+    width: 150px;
+}
+
+.bt-left {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bt-mid {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bt-right {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px
+}
+
+.find-friend {
+    background-color: #9900ff;
+    height: 33px;
+    width: 300px;
+    color: white;
+    font-size: larger;
+    box-shadow: 3px 3px 2px 0px black;
+}
+
+/* Container */
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* content */
+
+.content {
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content img {
+    height: 200px;
+    padding: 20px;    
+}
+
+.description {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pepper {
+    padding-right: 5%
+}
+
+.bruce {
+    padding-right: 11%;
+}
+
+.oscar {
+    padding-right: 10%;
+}
+
+.pettings {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.like-button {
+    background-color: #17cfd1;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    border-style: solid;
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    height: 35px;
+    width: 200px;
+    margin-right: 20px;
+}
